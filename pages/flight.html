@@ -12,22 +12,34 @@
 
     </head>
     <body>
-      <nav>
-        <div class="topNav">
-             <a href="index.html"><img src="/assets/Images/logo.png" width="100px"></a>
-             <div class="topNavRight">
-              <a href="/homepage.html">Home</a>
-              <a class="active" href="/pages/flight.html">Flights</a>
-              <a href="/pages/contact.html">Contact Us</a>
-
-             </div>
-
+      <header class="header-flights-image">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="/assets/Images/logo.png" alt="Logo" width="150px">
+          </div>
+          <ul>
+            <li><a href="/homepage.html">Home</a></li>
+            <li><a href="/pages/flight.html">Flights</a></li>
+            <li><a href="/pages/contact.html">Contact Us</a></li>
+          </ul>
+          <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <div class="search-icon">
+              <i class="fa fa-search"></i>
+            </div>
+            <div class="shopping-cart">
+              <i class="fa fa-shopping-cart"></i>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="content-flight">
+          <div class="text-fligh">
+            <h2>BOOK A FLIGHT</h2>
+            
+          </div>
         </div>
-     </nav>
-
-     <header>
-      <img src="/assets/Images/headerbackBack.png" width="100%" height="400px">
-     </header>
+      </header>
 
      <section class="filter">
 
@@ -59,29 +71,23 @@
      </section>
 
      <section class="flight1">
-      <div class="flexContainer-mars">
-          <div class="flexItem1"><img src="/assets/Images/Planets/flighhtMars.png"><p>Book a Flight</p> </div>
-          <div class="flexItem1">
-            <h2>The Classic Mars Experience</h2>
-            <h4>R25,000.00</h4>
-            <div class="rating">
-              <input value="5" name="rating" id="star5" type="radio">
-              <label for="star5"></label>
-              <input value="4" name="rating" id="star4" type="radio">
-              <label for="star4"></label>
-              <input value="3" name="rating" id="star3" type="radio">
-              <label for="star3"></label>
-              <input value="2" name="rating" id="star2" type="radio">
-              <label for="star2"></label>
-              <input value="1" name="rating" id="star1" type="radio">
-              <label for="star1"></label>
-            </div>
-            <p>Embark on a Mars vacation: Red deserts, ancient relics, and towering canyons await. enjoy low-gravity hiking, rover trips to Olympus Mons, and stargazing under Phobos and Deimos. Unforgettable adventures of the Red Planet.</p>
-
-            <button class="book-now-btn"> - 1 +</button>
-            <button class="book-now-btn">Book Now</button>
-
-          </div>
+      <div class="two-column-container">
+        <div class="two-column-left">
+          <img src="/assets/Images/Planets/flighhtMars.png" alt="Image">
+        </div>
+        <div class="two-column-right">
+          <p>The Classic Mars Experience</p>
+          <p>R25,000.00</p>
+          <p>Stars</p>
+          <p>Embark on a Mars vacation: Red deserts, ancient, relics, and towering canyons await. Enjoy low-gravity hiking, rover trips to Olympus Mons, and stargazing under Phobos and Deimos. Unforgettable adventures beckon on the rust-colored landscapes of the Red Planet.</p>
+          <button class="more-tickets">- 1 +</button>
+          <button class="book-now">Book Now</button>
+          <hr>
+          <p>Text Line 5</p>
+          <p>Text Line 6</p>
+          <p>Text Line 7</p>
+          <p>Text Line 8</p>
+        </div>
       </div>
       
     </section>
@@ -235,30 +241,32 @@
 
 
 
-     <footer class="footer">
-        <div class="footer-section left-section">
-            <img src="/assets/Images/logo.png" alt="Logo">
-            <p>FOffering unforgettable trips to explore planets in our solar system.</p>
-        </div>
-        <div class="footer-section center-section">
-            <p>Company</p>
-            <p>Home</p>
-            <p>Flights</p>
-            <p>Contact Us</p>
-        </div>
-        <div class="footer-section right-section">
-            <p>Footer Text</p>
-            <img src="/assets/Images/smFacebook.png" alt="Image 1">
-            <img src="/assets/Images/smInstagram.png" alt="Image 2">
-            <img src="/assets/Images/smTicktock.png" alt="Image 3">
-            <img src="/assets/Images/smX.png" alt="Image 4">
+      <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="/assets/Images/logo.png" alt="Logo" class="footer-logo">
+                <p class="footer-slogan">Our Slogan</p>
+            </div>
+            <div class="footer-column">
+                <p>Link 1</p>
+                <p>Link 2</p>
+                <p>Link 3</p>
+                <p>Link 4</p>
+            </div>
+            <div class="footer-column">
+                <p>Contact Us</p>
+                <div class="footer-social-media">
+                    <a href="#"><img src="/assets/Images/smFacebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="/assets/Images/smX.png" alt="Twitter"></a>
+                    <a href="#"><img src="/assets/Images/smInstagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="/assets/Images/smTicktock.png" alt="Tik-tok"></a>
+                </div>
+            </div>
         </div>
         <hr class="footer-line">
-        <div class="footer-section bottom-section">
-            <p>All Rights Reserved @ Open Window 2024</p>
-            <p>Terms & Conditions
-                Privacy & Policy
-            </p>
+        <div class="footer-line-text">
+            <p class="footer-line-left">Left Text</p>
+            <p class="footer-line-right">Right Text</p>
         </div>
     </footer>
     
