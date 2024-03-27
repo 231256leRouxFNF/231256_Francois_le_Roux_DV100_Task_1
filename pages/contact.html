@@ -12,71 +12,100 @@
 
     </head>
     <body>
-        <nav>
-            <div class="topNav">
-                 <a href="index.html"><img src="/assets/Images/logo.png" width="100px"></a>
-                 <div class="topNavRight">
-                     <a href="/homepage.html">Home</a>
-                     <a href="/pages/flight.html">Flights</a>
-                     <a class="active" href="/pages/contact.html">Contact Us</a>
-    
-                 </div>
-    
+        <header class="header-flight-image">
+            <nav class="navbar">
+              <div class="logo">
+                <img src="/assets/Images/logo.png" alt="Logo" width="150px">
+              </div>
+              <ul>
+                <li><a href="/homepage.html">Home</a></li>
+                <li><a href="/pages/flight.html">Flights</a></li>
+                <li><a href="/pages/contact.html">Contact Us</a></li>
+              </ul>
+              <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <div class="search-icon">
+                  <i class="fa fa-search"></i>
+                </div>
+                <div class="shopping-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </div>
+              </div>
+            </nav>
+            
+            <div class="content-contact">
+              <div class="text-contact">
+                <h2>CONTACT US</h2>
+                
+              </div>
             </div>
-         </nav>
-    
-         <header>
-          <img src="/assets/Images/headerbackBack.png" width="100%" height="400px">
-         </header>
+          </header>
 
          <section>
-            <div class="flexContainer-ships">
-                <div class="flexItem2"><img src="/assets/Images/contactImage.png"> </div>
-                <div class="flexItem2">
-                    <h4>About</h4>
-                    <h2>RED PLANET VENTURES</h2>
-                    <p>Welcome to Red Planet Ventures, where we are dedicated to turning dreams of interplanetary exploration into exhilarating realties. As a premier provider of space tourism experiences, we specialize in crafting meticulously curated journeys to diverse planets within our solar system. From the rugged terrain of Mars to the majestic rings of Saturn, our expertly designed trips offer unparalleled opportunities for discovery and adventure. With a commitment to safety innovation, and customer satisfaction, we strive to exceed expectations and leave a lasting impression on every traveler who embarks on a voyage with us. Join us as we push the boundaries of exploration and unlock the mysteries of the cosmos with Red Planet Ventures. </p>
-    
-                   
-    
-                </div>
+          <div class="two-columns">
+            <div class="left-column">
+                <p class="blue-text">ABOUT</p>
+                <h1 class="purple-text">RED PLANET VENTURES</h1>
+                <p>Welcome to Red Planet Ventures, where we are dedicated to turning dreams of interplanetary exploration into exhilarating realities. As a premier provider of space tourism experiences, we specialize in crafting meticulously curated journeys to the diverse planets within our solar system. From the rugged terrain of Mars to the majestic rings of Saturn, our expertly designed trips offer unparalleled opportunities for discovery and adventures. With a commitment to expectations and leave a lasting impression on every traveler who embarks on a voyage with us. Join us as we push the boundaries of exploration and unlock the mysteries of the cosmos with Red Planet Ventures.</p>
             </div>
-            
-          </section>
+            <div class="right-column">
+                <img src="/assets/Images/spacSchuttles.png" alt="Image">
+            </div>
+        </div>
+         </section>
+
+       <section>
+
+        <div class="row">
+          <div class="column" id="column-left">
+            <p class="blue-text">CONTACT US THROUGH OUR</p>
+            <h2 class="purple-text">SOCIAL MEDIA PAGES</h2>
+            <div class="contact-social-media">
+              <a href="#"><img src="/assets/Images/smFacebook.png" alt="Facebook"></a>
+              <a href="#"><img src="/assets/Images/smX.png" alt="Twitter"></a>
+              <a href="#"><img src="/assets/Images/smInstagram.png" alt="Instagram"></a>
+              <a href="#"><img src="/assets/Images/smTicktock.png" alt="Tik-tok"></a>
+            </div>
+            <div class="footer-map">
+             <p class="blue-text">CONTACT US THROUGH OUR</p>
+            <h2 class="purple-text">SOCIAL MEDIA PAGES</h2>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.321208720929!2d28.2095316!3d-25.891809199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956608911ce097%3A0x519896b4b6eda40a!2sOpen%20Window%20-%20Centurion!5e0!3m2!1sen!2sza!4v1711517788370!5m2!1sen!2sza" width="550" height="450             " style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="column" id="column-right">
+            <div class="footer-contact-form">
+              <h2 class="white-text">SEND US A MESSAGE</h2>
+              <form>
+                <label class="white-text">Your name</label><br>
+                <input type="text" name="name"><br>
+                <label class="white-text">Email address</label><br>
+                <input type="email" name="email"><br>
+                <label class="white-text">Subject</label><br>
+                <input type="text" name="subject"><br>
+                <label class="white-text">Message</label><br>
+                <textarea name="message"></textarea><br>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+        </div>
+        
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+       </section>
+         
 
 
           <footer>
             <div class="footer-container">
                 <div class="footer-column">
                     <img src="/assets/Images/logo.png" alt="Logo" class="footer-logo">
-                    <p class="footer-slogan">Our Slogan</p>
+                    <p class="footer-slogan">Offering unforgettable trips to explore planets in our solar systems.</p>
                 </div>
                 <div class="footer-column">
-                    <p>Link 1</p>
-                    <p>Link 2</p>
-                    <p>Link 3</p>
-                    <p>Link 4</p>
+                    <p>Home</p>
+                    <p>Flights</p>
+                    <p>Contact Us</p>
                 </div>
                 <div class="footer-column">
                     <p>Contact Us</p>
@@ -90,8 +119,8 @@
             </div>
             <hr class="footer-line">
             <div class="footer-line-text">
-                <p class="footer-line-left">Left Text</p>
-                <p class="footer-line-right">Right Text</p>
+                <p class="footer-line-left">All Rights Reserved @ Open Window 2024</p>
+                <p class="footer-line-right">Terms & Conditions     Privacy & Policy</p>
             </div>
         </footer>
 

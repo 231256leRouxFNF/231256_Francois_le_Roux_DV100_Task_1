@@ -1,14 +1,12 @@
 @font-face {
   font-family: 'PorterSansBlock';
-  src: url(/assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.ttf) format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  src: url(/assets/Fonts/porter_sans_block/porter-sans-inline-block.ttf);
+  src: url(/assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff) format('woff');
+ 
 }
 
 body {
   margin: 0;
-  /* font-family: 'PorterSansBlock', sans-serif; */
+  
 }
 
 
@@ -47,6 +45,7 @@ body {
 }
 
 .text-home {
+
   position: absolute;
   bottom: 70px;
   left: 15px;
@@ -65,138 +64,13 @@ body {
 
 .text-home p {
   color: #333;
-  font-size: 1rem;
-  font-family: 'PorterSansBlock',  sans-serif;
+  font-size: 25px;
   padding-left: 2.9em;
 
 }
 
 .header-home-image {
-  background-image: url(/assets/Images/homePageHeader.png);
-  height: 560px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-
-}
-
-/* Flight page header */
-
-.header {
-  position: relative;
-  width: 100%;
-  height: 550px;
- 
-}
-
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  
-}
-
-.content-flight {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 1em;
-  box-sizing: border-box;
-  padding-bottom: 50px;
-
-}
-
-.text-flight {
-  position: absolute;
-  bottom: 70px;
-  left: 15px;
- 
-}
-
-.text-flight h2 {
-  color: #ffffff;
-  font-size: 2.5rem;
-  margin-bottom: 275px;
-  margin-left: 9em;
-  line-height: 0.4;
-  font-family: 'PorterSansBlock', sans-serif;
-  padding-left: 1.2em;
-
-}
-
-.header-flights-image {
-  background-image: url(/assets/Images/headerbackBack.png);
-  height: 560px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-
-}
-
-/* Contact Us header */
-
-.header {
-  position: relative;
-  width: 100%;
-  height: 550px;
- 
-}
-
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  
-}
-
-.content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 1em;
-  box-sizing: border-box;
-  padding-bottom: 50px;
-
-}
-
-.text {
-  position: absolute;
-  bottom: 70px;
-  left: 15px;
- 
-}
-
-.text h2 {
-  color: #333;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  line-height: 0.4;
-  font-family: 'PorterSansBlock', sans-serif;
-  padding-left: 1.2em;
-
-}
-
-.text p {
-  color: #333;
-  font-size: 1rem;
-  font-family: 'PorterSansBlock',  sans-serif;
-  padding-left: 2.9em;
-
-}
-
-.header-home-image {
+  margin-top: 0%;
   background-image: url(/assets/Images/homePageHeader.png);
   height: 560px;
   background-repeat: no-repeat;
@@ -266,7 +140,7 @@ a {
 	right: 60px;
 }
 
-/* Homepage flexbox */
+/* Homepage */
 
 .flexContainer-mars {
   display: flex;
@@ -291,9 +165,9 @@ a {
 }
 
 .flexItem1 img {
-  width: 50%;
+  width: 75%;
   border-radius: 5%;
-  margin-left: 10em;
+  margin-left: 2em;
 
 }
 
@@ -333,6 +207,7 @@ a {
 }
 
 .trips {
+  height: 625px;
   background-color: #45016e;
   padding: 20px;
   text-align: center;
@@ -371,6 +246,196 @@ section {
   transform: scale(1.1);
 }
 
+/* Flight page header */
+
+.header {
+  margin-top: 0%;
+  position: relative;
+  width: 100%;
+  height: 550px;
+ 
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.content-flight {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1em;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+
+}
+
+.text-flight {
+  position: absolute;
+  bottom: 70px;
+  left: 15px;
+ 
+}
+
+.text-flight h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 275px;
+  margin-left: 10em;
+  line-height: 0.4;
+  font-family: 'PorterSansBlock', sans-serif;
+  padding-left: 1.2em;
+
+}
+
+.header-flights-image {
+  background-image: url(/assets/Images/headerbackBack.png);
+  height: 560px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.flight-planets {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 550px;
+  
+}
+
+.row-white:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+.row-white {
+  background-color: #ffffff;
+
+}
+
+.purple-row {
+  background-color: #45016e;
+
+}
+
+.checked {
+  color: orange;
+  
+}
+
+        /* Flight page buttons */
+
+.btn-left{
+ width: 90px;
+ height: 40px;
+ border-radius: 11px;
+ background-color: #45016e;
+ color: #ffffff; 
+ font-size: 20px;
+ 
+}
+
+.btn-right{
+ width: 150px;
+ height: 40px;
+ border-radius: 11px;
+ background-color: #e61729;
+ color: #ffffff; 
+ font-size: 20px;
+ 
+}
+
+
+.text{
+ font-size: 20px;
+ 
+}
+
+/* Flight page planet images */
+
+.planet-image img {
+  width: 375px;
+  margin-left: 9.25em;
+  /* align-items: center; */
+
+}
+
+
+/* Contact Us page */
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 550px;
+ 
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.content-contact {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1em;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+
+}
+
+.text-contact {
+  position: absolute;
+  bottom: 70px;
+  left: 15px;
+ 
+}
+
+.text-contact h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-left: 11.5em;
+  line-height: 0.4;
+  font-family: 'PorterSansBlock', sans-serif;
+  padding-bottom: 5.9em;
+
+}
+
+.header-flight-image {
+  background-image: url(/assets/Images/headerbackBack.png);
+  height: 560px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+}
 
 /* Buttons */
 
@@ -429,65 +494,7 @@ label {
 
 }
 
-.flight1 {
-  background-color: #ffffff;
-
-}
-
-.flight2 {
-  background-color: #45016e;
-
-
-}
-
-.two-column-container {
-  display: flex;
-  gap: 1rem;
-}
-
-.two-column-left {
-  width: 50%;
-}
-
-.two-column-left img {
-  width: 20em;
-  height: 25em;
-  margin: 2em 13em;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.two-column-right {
-  width: 50%;
-}
-
-.two-column-right p {
-  margin-bottom: 1rem;
-}
-
-.more-tickets {
-  background-color: #f9f9f9;
-  color: #333;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 10px;
-  margin-right: 1rem;
-  cursor: pointer;
-}
-
-.book-now {
-  width: 150px;
-  height: 60px;
-  font-size: 18px;
-  background-color: #ff2a2a;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  
-}
-
+/* 
 hr {
   border: none;
   height: 1px;
@@ -495,58 +502,180 @@ hr {
   margin-bottom: 1rem;
 }
 
-/* Ratings on flight page */
-/* Still experimental */
+/* flight page */
 
-.rating {
-  display: inline-block;
-
+.flight1-section {
+  width: 100%;
+  margin-left: 17.5em;
+  background-color: #f1f1f1;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
-.rating input {
-  display: none;
-
+.flight2-section {
+  width: 100%;
+  background-color: #45016e;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
-.rating label {
-  float: right;
-  cursor: pointer;
-  color: #ccc;
-  transition: color 0.3s;
-
+.flight1-left-column {
+  width: 30%;
 }
 
-.rating label:before {
-  content: '\2605';
-  font-size: 30px;
-
+.flight1-right-column {
+  width: 65%;
 }
 
-.rating input:checked ~ label,
-.rating label:hover,
-.rating label:hover ~ label {
-  color: #6f00ff;
-  transition: color 0.3s;
-
+.flight1-img {
+  width: 75%;
+  height: auto;
 }
-
 
 
 /* contact Page */
 
+.two-columns {
+  display: flex;
+}
+
+.left-column {
+  text-align: left;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 100px;
+  align-content: last baseline;
+}
+
+.left-column p {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.right-column {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.right-column img {
+  margin-top: 4em;
+  margin-left: 4em;
+  width: 500px;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 750px; 
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+/* .column {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+} */
+
+.contact-social-media img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.footer-map {
+  margin-top: 20px;
+  /* Adjust styling for map */
+}
+
+#column-left {
+  margin-right: 1em;
+  text-align: left;
+  width: 650px;
+}
+
+#column-right {
+  margin-left: 1em;
+  text-align: start;
+  width: 590px;
+}
+
+.footer-contact-form {
+  background-image: url(/assets/Images/formBack.png);
+  background-repeat: no-repeat;
+  height: 1000px;
+  padding: 40px;
+  /* background-color: #f9f9f9; */
+  border-radius: 5px;
 
 
+}
+.footer-contact-form input[type="text"],
+.footer-contact-form input[type="email"],
+.footer-contact-form input[type="text"],
+.footer-contact-form textarea {
+  width: 475px;
+  margin-bottom: 50px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
 
+}
 
+.footer-contact-form input[type="submit"] {
+  width: 150px;
+  height: 50px;
+  font-size:  20px;
+  background-color: red;
+  color: white;
+  border: none;
+  /* padding: 15px 20px; */
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 15px;
 
-
-
+}
 
 /* Footer */
 
 footer {
   background-color: #ffffff;
-  padding: 20px 0;
+  padding: 20px;
+  margin-top: 2em;
 }
 
 .footer-container {
@@ -559,23 +688,27 @@ footer {
 
 .footer-column {
   color: #333;
+
 }
 
 .footer-logo {
   width: 200px;
   height: auto;
   margin-left: 4em;
+
 }
 
 .footer-slogan {
   margin-top: 10px;
   font-size: 14px;
   margin-left: 4em;
+
 }
 
 .footer-column p {
   margin-top: 10px;
   font-size: 14px;
+
 }
 
 .footer-social-media {
@@ -583,6 +716,7 @@ footer {
   justify-content: space-between;
   margin-top: 10px;
   margin-right: 10em;
+
 }
 
 .footer-social-media img {
@@ -597,6 +731,7 @@ footer {
   border-top: 1px solid #333;
   width: 80%;
   margin: 20px auto;
+
 }
 
 .footer-line-text {
@@ -605,14 +740,17 @@ footer {
   align-items: center;
   font-size: 14px;
   color: #333;
+
 }
 
 .footer-line-left {
   margin-left: 20px;
+
 }
 
 .footer-line-right {
   margin-right: 20px;
+
 }
 
 
@@ -620,12 +758,16 @@ footer {
 
 .blue-text {
   color: #50c0d6;
+  
 }
 
 .white-text {
   color: #ffffff;
+
 }
 
 .purple-text {
   color: #2f0050;
+
 }
+
