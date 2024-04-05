@@ -15,16 +15,16 @@
     <title>Space Travel: Experience the Solar System</title>
     <body>
       
-
+      <!--Header & Nav-->
       <header class="header-home-image">
         <nav class="navbar">
           <div class="logo">
             <img src="/assets/Images/logo.png" alt="Logo" width="150px">
           </div>
           <ul>
-            <li><a href="/homepage.html">Home</a></li>
-            <li><a href="/pages/flight.html">Flights</a></li>
-            <li><a href="/pages/contact.html">Contact Us</a></li>
+            <li ><a href="/homepage.html"><p style="color: #af0002;"><strong>Home</strong></p></a></li>
+            <li><a href="/pages/flight.html"><p><strong>Flights</strong></p></a></li>
+            <li><a href="/pages/contact.html"><p><strong>Contact Us</strong></p></a></li>
           </ul>
           <div class="search-bar">
             <input type="text" placeholder="Search">
@@ -41,11 +41,13 @@
           <div class="text-home">
             <h2>Red Planet</h2>
             <h2>Ventures</h2>
-            <p>Explore The Solar System</p>
+            <p class="normal-text">Explore The Solar System</p>
           </div>
         </div>
       </header>
 
+      <!--Featured trip-->
+      <!--Arrow image ain't working, but thats fine. needs JS I think... which is next term-->
      <section class="trips">
       <div class="flexContainer-mars">
           <div class="flexItem1"><img src="/assets/Images/marsSliderClipped1.png"> </div>
@@ -54,17 +56,21 @@
             <h2 class="white-text">THE CLASSIC MARS EXPERIENCE</h2>
             <p class="white-text">Embark on a Mars vacation: Red deserts, ancient relics, and towering canyons await. enjoy low-gravity hiking, rover trips to Olympus Mons, and stargazing under Phobos and Deimos. Unforgettable adventures of the Red Planet.</p>
 
-            <button class="book-trip-button">Book Now</button>
+            <a href="/pages/flight.html">
+              <button class="book-trip-button">Book Now</button>
+            </a>
+            
 
           </div>
       </div>
       
     </section>
 
-    <section class="flex-Container-ship">
+    <!--Ship section-->
+    <section class="flexContainer-ship">
       <div class="flexContainer-ship">
-        <div class="flexItem2"><img src="/assets/Images/spacSchuttles.png"> </div>
-        <div class="flexItem2">
+        <div class="ship-content"><img src="/assets/Images/spacSchuttles.png"> </div>
+        <div class="ship-content">
           <h4 class="blue-text">OUR SHUTTLES</h4>
           <h2 class="purple-text">Travel In Style With A</h2>
           <h2 class="purple-text">Variety Of Shuttles</h2>
@@ -74,6 +80,7 @@
     </div>
     </section>
 
+    <!--Trips-->
       <section class="trips">
 
         <div class="centered-content">
@@ -83,23 +90,23 @@
         <div class="columns">
           <div class="column">
             <img src="/assets/Images/upcomingTrip1.png" alt="Image 1">
-            <h4 class="white-text"><strong>The Classic Mars Experience</strong></h4>
-            <p class="white-text">Explore red deserts, ancient relics, low-gravity adventures on Mars.</p>
+            <h2 class="trip-text-h"><strong>The Classic Mars Experience</strong></h2>
+            <p class="trip-text-p">Explore red deserts, ancient relics, low-gravity adventures on Mars.</p>
           </div>
           <div class="column">
             <img src="/assets/Images/upcomingTrip2.png" alt="Image 2">
-            <h4 class="white-text"><strong>Neptune's Cosmic Dive</strong></h4>
-            <p class="white-text">Experience Neptune's mysterious depths in a celestial voyage.</p>
+            <h2 class="trip-text-h"><strong>Neptune's Cosmic Dive</strong></h2>
+            <p class="trip-text-p">Experience Neptune's mysterious depths in a celestial voyage.</p>
           </div>
           <div class="column">
             <img src="/assets/Images/upcomingTrip3.png" alt="Image 3">
-            <h4 class="white-text"><strong>Jupiter: The Giant's Journey</strong></h4>
-            <p class="white-text">Embark on Jupiter and witness the gas giant's majesty.</p>
+            <h2 class="trip-text-h"><strong>Jupiter: The Giant's Journey</strong></h2>
+            <p class="trip-text-p">Embark on Jupiter and witness the gas giant's majesty.</p>
           </div>
           <div class="column">
             <img src="/assets/Images/upcomingTrip4.png" alt="Image 4">
-            <h4 class="white-text"><strong>Ring Around A Saturn</strong></h4>
-            <p class="white-text">Explore Saturn's rings, moons, and enigmatic beauty on an odyssey.</p>
+            <h2 class="trip-text-h"><strong>Ring Around A Saturn</strong></h2>
+            <p class="trip-text-p">Explore Saturn's rings, moons, and enigmatic beauty on an odyssey.</p>
           </div>
         </div>
 
@@ -107,23 +114,32 @@
 
       <section class="book-trip-section">
         <div class="book-trip-container">
+          <a href="/pages/flight.html"> 
             <button class="book-trip-button">Book a Trip Now</button>
+          </a>
+            
         </div>
     </section>
 
+    <!--Footer-->
     <footer>
         <div class="footer-container">
             <div class="footer-column">
                 <img src="/assets/Images/logo.png" alt="Logo" class="footer-logo">
-                <p class="footer-slogan">Offering unforgettable trips to explore planets in our solar systems.</p>
+                <div class="footer-slogan">
+                  <p class="normal-text">Offering unforgettable trips to</p>
+                  <p class="normal-text">explore planets in our solar</p>
+                  <p class="normal-text">systems.</p>
+                </div>
+
             </div>
             <div class="footer-column">
-                <p>Home</p>
-                <p>Flights</p>
-                <p>Contact Us</p>
+              <a href="/homepage.html"> <p class="normal-text">Home</p></a>
+              <a href="/pages/flight.html"> <p class="normal-text">Flights</p></a>
+              <a href="/pages/contact.html"> <p class="normal-text">Contact Us</p></a>
             </div>
             <div class="footer-column">
-                <p>Contact Us</p>
+                <p class="normal-text">Contact Us</p>
                 <div class="footer-social-media">
                     <a href="#"><img src="/assets/Images/smFacebook.png" alt="Facebook"></a>
                     <a href="#"><img src="/assets/Images/smX.png" alt="Twitter"></a>
@@ -138,27 +154,6 @@
             <p class="footer-line-right">Terms & Conditions     Privacy & Policy</p>
         </div>
     </footer>
-    
-     
-      
-
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </body>
 </html>
