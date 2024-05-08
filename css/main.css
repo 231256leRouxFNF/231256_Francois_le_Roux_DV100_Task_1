@@ -5,7 +5,7 @@
 }
 
 body {
-  margin: 0%;
+  margin: 0;
  
 }
 
@@ -169,6 +169,7 @@ nav{
 .flexItem1 h4 h2 p {
   float: right;
   width: 25%;
+  line-height: 0.25em;
 
 }
 
