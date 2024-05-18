@@ -130,6 +130,12 @@ nav{
   background-color: #333;
   
   }
+
+  .btn-cart{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+  }
   
   /* Navbar links */
   .topnav a {
@@ -179,6 +185,59 @@ nav{
 
 }
 
+/* Carousel */
+
+/* This CSS started messing up the rest of the pages */
+/* .carousel {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 400%;
+  border-radius: 20px;
+
+}
+
+.slide {
+  transition: opacity 1s;
+
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.prev {
+  left: 0;
+
+}
+
+.next {
+  right: 0;
+
+} */
+
 .flexContainer-ship {
   height: 500px;
   display: flex;
@@ -218,7 +277,7 @@ nav{
 }
 
 .trips {
-  height: 625px;
+  height: 750px;
   background-color: #45016e;
   padding: 20px;
   text-align: center;

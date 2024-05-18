@@ -53,7 +53,9 @@
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         </form>
                           <!-- Btn to bring up cart -->
-                          <button type="button" class="btn btn-primary" id="openModalBtn">Open Modal</button>
+                          <button type="button" class="btn-cart" id="openModalBtn">
+                            <img src="/assets/Images/#" alt="cart">
+                          </button>
 
                                 <!-- I used Bootstrap for the modal -->
                                 <div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="ticketModalLabel" aria-hidden="true">
@@ -92,7 +94,20 @@
       <!--Arrow image ain't working, but thats fine. needs JS I think... which is next term-->
      <section class="trips">
       <div class="flexContainer-mars">
-          <div class="flexItem1"><img src="assets/Images/marsSliderClipped1.png"> </div>
+          <div class="flexItem1">
+            <div class="flexItem1"><img src="assets/Images/marsSliderClipped1.png"> </div>
+            <!-- Trying to figure this out do that it works -->
+            <!-- <div class="carousel">
+              <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+              <div class="slides">
+                  <img src="assets/Images/marsSliderClipped1.png" class="slide" alt="Image 1">
+                  <img src="assets/Images/marsSliderClipped2.png" class="slide" alt="Image 2">
+                  <img src="assets/Images/marsSliderClipped3.png" class="slide" alt="Image 3">
+                  <img src="assets/Images/marsSliderClipped14.png" class="slide" alt="Image 4">
+              </div>
+              <button class="next" onclick="changeSlide(1)">&#10095;</button>
+          </div> -->
+          </div>
           <div class="flexItem1">
             <h4 class="blue-text">FEATURED TRIP</h4>
             <h2 class="white-text">THE CLASSIC MARS EXPERIENCE</h2>

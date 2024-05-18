@@ -49,28 +49,30 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     </form>
                     <!-- Btn to bring up cart -->
-                    <button type="button" class="btn btn-primary" id="openModalBtn">Open Modal</button>
+                    <button type="button" class="btn-cart" id="openModalBtn">
+                        <img src="/assets/Images/#" alt="cart">
+                      </button>
 
-                      <!-- I used Bootstrap for the modal -->
-                        <div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="ticketModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="ticketModalLabel">Ticket Management</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                                </button>
+                            <!-- I used Bootstrap for the modal -->
+                            <div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="ticketModalLabel" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="ticketModalLabel">Ticket Management</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body" id="ticketList">
+                                   <!--Still need to figure this out -->
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-danger" id="discardTicketBtn">Discard Ticket</button>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <div class="modal-body" id="ticketList">
-                            <!--Still need to figure this out -->
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-danger" id="discardTicketBtn">Discard Ticket</button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
                     </div>
                     </div>
                 </nav>

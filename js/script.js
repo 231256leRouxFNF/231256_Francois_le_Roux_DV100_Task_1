@@ -2,16 +2,29 @@
 // Function to add ticket
 
   // Function to discard ticket
-  function discardTicket() {
-    const ticketList = document.getElementById('ticketList');
+
     // Remove the last ticket item
-    ticketList.removeChild(ticketList.lastChild);
-  }
+  
 
   // Event listener for opening modal
   document.getElementById('openModalBtn').addEventListener('click', function() {
     $('#ticketModal').modal('show'); // Activate modal
   });
 
-  // Event listener for discarding ticket
-  document.getElementById('discardTicketBtn').addEventListener('click', discardTicket);
+  //Function for discarding tickets
+
+
+  //This is freaking out @ the moment, trying to fix it
+  // // Carousel
+
+  // let currentSlide = 0;
+
+  // function changeSlide(direction) {
+  //     const slides = document.querySelectorAll('.slide');
+  //     const totalSlides = slides.length;
+  
+  //     currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+  
+  //     document.querySelector('.slides').style.transform = `translateX(-${currentSlide * 100}%)`;
+  // }
+  
