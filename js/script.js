@@ -27,4 +27,7 @@
   
   //     document.querySelector('.slides').style.transform = `translateX(-${currentSlide * 100}%)`;
   // }
+
+  // New Carousel code
+  
   
