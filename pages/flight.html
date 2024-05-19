@@ -49,30 +49,31 @@
                   <form class="d-flex">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   </form>
-                <!-- Btn to bring up cart -->
-                <button type="button" class="btn-cart" id="openModalBtn">
-                  <img src="/assets/Images/#" alt="cart">
-                </button>
+                    <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ticketModal">
+                          Open Ticket Modal
+                      </button>
 
-                      <!-- I used Bootstrap for the modal -->
+                      <!-- The Modal -->
                       <div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="ticketModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="ticketModalLabel">Ticket Management</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body" id="ticketList">
-                             <!--Still need to figure this out -->
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-danger" id="discardTicketBtn">Discard Ticket</button>
-                            </div>
+                          <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title" id="ticketModalLabel">Tickets</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                      </button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <ul id="ticketList" class="list-group">
+                                          <!-- Ticket items will be added here -->
+                                      </ul>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
                           </div>
-                        </div>
                       </div>
                   </div>
                   </div>
@@ -112,7 +113,7 @@
     
         <div class="button-container">
         <button class="btn-left-w">- 1 +</button>
-        <button class="btn-right">Book Now</button>
+        <button class="btn btn-success" onclick="addFlightTicket('The Classic Mars Experience')">Book Now</button>
         <hr><br>
 
         <p>SKU  	   : SS001</p>
@@ -142,7 +143,7 @@
     
         <div class="button-container">
         <button class="btn-left-p">- 1 +</button>
-        <button class="btn-right">Book Now</button>
+        <button class="btn btn-success" onclick="addFlightTicket('Neptune Cosmic Dive')">Book Now</button>
         <hr><br>
 
         <p class="white-text">SKU  	   : SS405</p>
@@ -174,7 +175,7 @@
     
         <div class="button-container">
         <button class="btn-left-w">- 1 +</button>
-        <button class="btn-right">Book Now</button>
+        <button class="btn btn-success" onclick="addFlightTicket('The Giants Journey')">Book Now</button>
         <hr>
         <p>SKU  	   : SS606</p>
         <p>Shuttle   : The Odyssey</p>
@@ -203,7 +204,7 @@
     
         <div class="button-container">
         <button class="btn-left-p">- 1 +</button>
-        <button class="btn-right">Book Now</button>
+        <button class="btn btn-success" onclick="addFlightTicket('Ring Around a Saturn')">Book Now</button>
         <hr><br>
 
         <p class="white-text">SKU  	   : SS333</p>
@@ -233,7 +234,7 @@
     
         <div class="button-container">
         <button class="btn-left-w">- 1 +</button>
-        <button class="btn-right">Book Now</button>
+        <button class="btn btn-success" onclick="addFlightTicket('Uranus Uncharted')">Book Now</button>
         <hr>
         <p>SKU  	   : SS735</p>
         <p>Shuttle   : The Endeavor</p>
@@ -262,7 +263,7 @@
     
         <div class="button-container">
         <button class="btn-left-p">- 1 +</button>
-        <button class="btn-right">Book Now</button>
+        <button class="btn btn-success" onclick="addFlightTicket('Moonlight Meander')">Book Now</button>
         <hr><br>
 
         <p class="white-text">SKU  	   : SS451</p>
@@ -277,29 +278,33 @@
     </div>
     
     <!-- Still sorting this one out-->
+    <!-- I think I got it working, just hoping it doesn't break-->
     <div class="cart-btn">
       <div class="view-cart-btn">
-          <!-- Btn to bring up cart -->
-          <button type="button" class="btn btn-primary" id="openModalBtn">Open Modal</button>
+          <!-- Button to Open the Modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ticketModal">
+            Open Ticket Modal
+          </button>
 
-           <!-- I used Bootstrap for the modal -->
-            <div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="ticketModalLabel" aria-hidden="true">
+          <!-- The Modal -->
+          <div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="ticketModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="ticketModalLabel">Ticket Management</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ticketModalLabel">Tickets</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul id="ticketList" class="list-group">
+                            <!-- Ticket items will be added here -->
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
-                <div class="modal-body" id="ticketList">
-                  <!--Still need to figure this out -->
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-danger" id="discardTicketBtn">Discard Ticket</button>
-                </div>
-              </div>
             </div>
           </div>
       </div>
@@ -326,10 +331,10 @@
           <div class="footer-column">
               <p class="normal-text">Contact Us</p>
               <div class="footer-social-media">
-                  <a href="#"><img src="/assets/Images/smFacebook.png" alt="Facebook"></a>
-                  <a href="#"><img src="/assets/Images/smX.png" alt="Twitter"></a>
-                  <a href="#"><img src="/assets/Images/smInstagram.png" alt="Instagram"></a>
-                  <a href="#"><img src="/assets/Images/smTicktock.png" alt="Tik-tok"></a>
+                <a href="https://www.facebook.com/theopenwindow/"><img src="assets/Images/smFacebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com/open_window_?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="assets/Images/smX.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/openwindowinstitute/?hl=en"><img src="assets/Images/smInstagram.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@open_window_"><img src="assets/Images/smTicktock.png" alt="Tik-tok"></a>
               </div>
           </div>
       </div>
@@ -340,8 +345,10 @@
       </div>
   </footer>
     
-  <script src="<https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js>" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="/js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
 
     </body>
 </html>
