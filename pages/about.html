@@ -19,75 +19,120 @@
 
         <div class="bg-img-about">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-                    <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                      <img src="/assets/Images/logo.png" alt="logo" class="logo-nav">
-                    </a>
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <img src="/assets/Images/logo.png" alt="logo" class="logo-nav">
+                </a>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarScroll">
+
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                <a class="nav-link" href="homepage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/pages/flight.html">Flights</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/pages/contact.html" tabindex="-1">Contact</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/pages/about.html" tabindex="-1">About</a>
+                </li>
+                </ul>
+
+                <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                  <!-- Button to Open the Modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ticketModal">
+                        Open Ticket Modal
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarScroll">
-
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                    <a class="nav-link" href="/homepage.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="flight.html">Flights</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="contact.html" tabindex="-1">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="about.html" tabindex="-1">About</a>
-                    </li>
-                    </ul>
-
-                    <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    </form>
-                   <!-- Button to Open the Modal -->
-                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ticketModal">
-                            Open Ticket Modal
-                        </button>
-
-                        <!-- The Modal -->
-                        <div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="ticketModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="ticketModalLabel">Tickets</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <ul id="ticketList" class="list-group">
-                                            <!-- Ticket items will be added here -->
-                                        </ul>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    </div>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="ticketModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ticketModalLabel">Tickets</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul id="ticketList" class="list-group">
+                                        <!-- Ticket items will be added here -->
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                </div>
+            </nav>
+                  <div class="content-about">
+                    <div class="text-about">
+                      <h2>About Us</h2>
                     </div>
-                </nav>
+                  </div>
             </div>
-        
-    </div>
+      </div>
+
+      <section class="about-us py-5">
+        <div class="container">
+          <h2>Our Mission</h2>
+          <p>We aim to provide the best services to our customers with utmost dedication and commitment.</p>
+        </div>
+      </section>   
 
 
-
+      <!-- Might do this part, otherwise I'll add a Testimonial section with reviews form clients -->
+      <!-- <section class="team py-5 bg-light">
+        <div class="container">
+          <h2>Meet Our Team</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="team1.jpg" class="card-img-top" alt="Team Member 1">
+                <div class="card-body">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="card-text">CEO</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="team2.jpg" class="card-img-top" alt="Team Member 2">
+                <div class="card-body">
+                  <h5 class="card-title">Jane Smith</h5>
+                  <p class="card-text">CTO</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="team3.jpg" class="card-img-top" alt="Team Member 3">
+                <div class="card-body">
+                  <h5 class="card-title">Jim Brown</h5>
+                  <p class="card-text">CFO</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
 
     <!--Footer-->
-    <footer>
+    <footer style="padding-top: 5em;">
         <div class="footer-container">
             <div class="footer-column">
                 <img src="/assets/Images/logo.png" alt="Logo" class="footer-logo">
@@ -106,13 +151,14 @@
             <div class="footer-column">
                 <p class="normal-text">Contact Us</p>
                 <div class="footer-social-media">
-                  <a href="https://www.facebook.com/theopenwindow/"><img src="assets/Images/smFacebook.png" alt="Facebook"></a>
-                  <a href="https://twitter.com/open_window_?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="assets/Images/smX.png" alt="Twitter"></a>
-                  <a href="https://www.instagram.com/openwindowinstitute/?hl=en"><img src="assets/Images/smInstagram.png" alt="Instagram"></a>
-                  <a href="https://www.tiktok.com/@open_window_"><img src="assets/Images/smTicktock.png" alt="Tik-tok"></a>
+                  <a href="https://www.facebook.com/theopenwindow/"><img src="/assets/Images/smFacebook.png" alt="Facebook"></a>
+                  <a href="https://twitter.com/open_window_?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="/assets/Images/smX.png" alt="Twitter"></a>
+                  <a href="https://www.instagram.com/openwindowinstitute/?hl=en"><img src="/assets/Images/smInstagram.png" alt="Instagram"></a>
+                  <a href="https://www.tiktok.com/@open_window_"><img src="/assets/Images/smTicktock.png" alt="Tik-tok"></a>
                 </div>
             </div>
         </div>
+
         <hr class="footer-line">
         <div class="footer-line-text">
             <p class="footer-line-left">All Rights Reserved @ Open Window 2024</p>

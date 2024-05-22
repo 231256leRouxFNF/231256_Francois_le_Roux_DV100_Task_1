@@ -901,6 +901,34 @@ footer {
 
 }
 
+/* About page */
+
+.content-about {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding-top: 5em;
+  padding-right: 5em; 
+
+}
+
+.text-about {
+  position: absolute;
+  left: 15px;
+ 
+}
+
+.text-about h2 {
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  line-height: 1;
+  font-family: 'PorterSansBlock', sans-serif;
+  padding-left: 1.2em;
+
+}
 
 /* Text Colors */
 
