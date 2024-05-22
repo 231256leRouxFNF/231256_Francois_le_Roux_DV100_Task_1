@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   loadTickets();
 });
 
+// This lets the user(s) know that there ticket has been added
 function addFlightTicket(flightName) {
   const tickets = JSON.parse(localStorage.getItem('tickets')) || [];
   tickets.push(flightName);
@@ -9,6 +10,7 @@ function addFlightTicket(flightName) {
   alert(`${flightName} added to your tickets`);
 }
 
+// This adds and removes the tickets from the cart
 function addTicketToList(ticketName) {
   const ticketList = document.getElementById('ticketList');
   const newTicket = document.createElement('li');
@@ -27,6 +29,8 @@ function addTicketToList(ticketName) {
   ticketList.appendChild(newTicket);
 }
 
+
+// This makes sure that the tickets stay displayed on the cart when moving between the pages
 function saveTickets() {
   const ticketList = document.getElementById('ticketList');
   const tickets = [];
