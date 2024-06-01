@@ -979,3 +979,33 @@ footer {
   font-size: 17px;
 
 }
+
+/* Code from W6 */
+
+.btn{
+  cursor: pointer;
+  padding: 1.5em;
+  color: #fff;
+  background-color: #00a496;
+  border: 1px solid #00a496;
+  font-size: 20px;
+}
+
+.btn:hover{
+  background-color: #38e087;
+  color: #121212;
+  
+ }
+
+.btn-left {  
+  border-radius: 10px 0 0 10px;
+}
+
+.btn-right{
+  border-radius: 0 10px 10px 0 ;
+}
+
+.input-box {
+  border: 1px solid #121212;
+  text-align: center;
+}

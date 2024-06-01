@@ -45,3 +45,49 @@ function loadTickets() {
   const tickets = JSON.parse(localStorage.getItem('tickets')) || [];
   tickets.forEach(ticket => addTicketToList(ticket));
 }
+
+
+// Code from W6 on how to add more than 1 ticket to the cart
+
+function decreaseMars(){
+  if (document.getElementById('ticketsMars').value != 0){
+      document.getElementById('ticketsMars').value = parseInt(document.getElementById('ticketsMars').value) - 1;
+  } else {
+      document.getElementById('ticketsMars').value = 0;
+  }
+}
+
+function increaseMars(){
+  document.getElementById('ticketsMars').value = parseInt(document.getElementById('ticketsMars').value) + 1;
+}
+
+
+let totalMarsCost = 0;
+
+function total(){
+  totalMarsCost = parseInt(document.getElementById('ticketsMars').value) * 50;
+  document.getElementById('total').innerHTML = "R " + totalMarsCost;
+
+}
+//////
+function decreaseMars(){
+  if (document.getElementById('ticketsSaturn').value != 0){
+      document.getElementById('ticketsSaturn').value = parseInt(document.getElementById('ticketsMars').value) - 1;
+  } else {
+      document.getElementById('ticketsMars').value = 0;
+  }
+}
+
+function increaseMars(){
+  document.getElementById('ticketsMars').value = parseInt(document.getElementById('ticketsMars').value) + 1;
+}
+
+
+let totalMarsCost = 0;
+
+function total(){
+  totalMarsCost = parseInt(document.getElementById('ticketsMars').value) * 50;
+  document.getElementById('total').innerHTML = "R " + totalMarsCost;
+  
+}
+
