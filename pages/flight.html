@@ -69,6 +69,9 @@
                                           <!-- Ticket items will be added here -->
                                       </ul>
                                   </div>
+                                  <tr>
+                                    <td colspan="4"> <p>Total: <span id="total"></span></p></td>
+                                  </tr>
                                   <div class="modal-footer">
                                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                   </div>
@@ -148,7 +151,7 @@
         <div class="button-container">
         <!---->
         <button class="btn btn-left" onclick="decreaseMars();total()" >-</button>
-        <input type="text" value="0" class="input-box" id="ticketsMars" onchange="total()">
+        <input type="text" value="0" class="input-box" id="ticketsNeptune" onchange="total()">
         <button class="btn btn-right" onclick="increaseMars();total()" >+</button>
         <!---->
         <button class="btn btn-danger" onclick="addFlightTicket('Neptune Cosmic Dive')">Book Now</button>
@@ -184,7 +187,7 @@
         <div class="button-container">
         <!---->
        <button class="btn btn-left" onclick="decreaseMars();total()" >-</button>
-       <input type="text" value="0" class="input-box" id="ticketsMars" onchange="total()">
+       <input type="text" value="0" class="input-box" id="ticketsJup" onchange="total()">
        <button class="btn btn-right" onclick="increaseMars();total()" >+</button>
        <!---->
 
@@ -218,7 +221,7 @@
         <div class="button-container">
             <!---->
        <button class="btn btn-left" onclick="decreaseMars();total()" >-</button>
-       <input type="text" value="0" class="input-box" id="ticketsMars" onchange="total()">
+       <input type="text" value="0" class="input-box" id="ticketsSaturn" onchange="total()">
        <button class="btn btn-right" onclick="increaseMars();total()" >+</button>
        <!---->
           <button class="btn btn-danger" onclick="addFlightTicket('Ring Around a Saturn')">Book Now</button>
@@ -252,7 +255,7 @@
         <div class="button-container">
             <!---->
        <button class="btn btn-left" onclick="decreaseMars();total()" >-</button>
-       <input type="text" value="0" class="input-box" id="ticketsMars" onchange="total()">
+       <input type="text" value="0" class="input-box" id="ticketsUranus" onchange="total()">
        <button class="btn btn-right" onclick="increaseMars();total()" >+</button>
        <!---->
 
@@ -286,7 +289,7 @@
         <div class="button-container">
             <!---->
        <button class="btn btn-left" onclick="decreaseMars();total()" >-</button>
-       <input type="text" value="0" class="input-box" id="ticketsMars" onchange="total()">
+       <input type="text" value="0" class="input-box" id="ticketsMoon" onchange="total()">
        <button class="btn btn-right" onclick="increaseMars();total()" >+</button>
        <!---->
 
@@ -327,6 +330,9 @@
                             <!-- Ticket items will be added here -->
                         </ul>
                     </div>
+                    <tr>
+                      <td colspan="4"> <p>Total: <span id="total"></span></p></td>
+                    </tr>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
