@@ -190,3 +190,33 @@ function total(){
   document.getElementById('total').innerHTML = "R " + finalCost;
 
 }
+
+
+// Contact Form JavaScript 
+
+// Get the form element
+const form = document.querySelector('form');
+
+// Add an event listener to the form's submit event
+form.addEventListener('submit', (e) => {
+  // Prevents the default form submission behavior
+  e.preventDefault();
+
+  // Fetches the form data
+  const name = document.querySelector('input[name="name"]').value;
+  const email = document.querySelector('input[name="email"]').value;
+  const subject = document.querySelector('input[name="subject"]').value;
+  const message = document.querySelector('textarea[name="message"]').value;
+
+  // Stores the form data in sessionStorage
+  sessionStorage.setItem('name', name);
+  sessionStorage.setItem('email', email);
+  sessionStorage.setItem('subject', subject);
+  sessionStorage.setItem('message', message);
+
+  // Sends out the alert to the user
+  alert('Message sent successfully!');
+
+  // Resets the form 
+  form.reset();
+});
