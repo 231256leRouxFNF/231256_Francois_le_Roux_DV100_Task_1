@@ -12,5 +12,6 @@
             "addWords": true,
             "scope": "workspace"
         }
-    }
+    },
+    "notebook.defaultFormatter": "Blackboxapp.blackbox"
 }

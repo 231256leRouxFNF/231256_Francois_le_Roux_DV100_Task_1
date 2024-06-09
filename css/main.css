@@ -903,41 +903,28 @@ footer {
 
 /* About page */
 
-/* body {
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
-  text-align: center;
-} */
+.jumbotron {
+  background: url('header-background.jpg') no-repeat center center;
+  background-size: cover;
 
-.error-container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.error-code {
-  font-size: 48px;
-  font-weight: bold;
-  color: #ff0000;
-}
-.error-message {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-.error-button {
-  background-color: #337ab7;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 18px;
-  cursor: pointer;
-}
-.error-button:hover {
-  background-color: #23527c;
 }
 
+header .lead {
+  font-size: 1.25rem;
+
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+
+}
+
+footer a:hover {
+  text-decoration: underline;
+
+}
+ 
 /* Text Colors */
 
 .blue-text {
