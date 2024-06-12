@@ -5,13 +5,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
 // Searchbar
 
 const searchInput = document.getElementById('search-input');
+const searchButton = document.getElementById('search-button');
 
-searchInput.addEventListener('keypress', function(event) {
-  if (event.key === 'Enter') {
-    const planetName = searchInput.value.trim();
-    if (planetName) {
-      window.location.href = 'pages/flight.html?planet=' + planetName;
-    }
+searchButton.addEventListener('click', () => {
+  const planetName = searchInput.value.trim();
+  if (planetName) {
+    // Navigate to the flights page with the planet name
+    window.location.href = `/flights/${planetName}`;
+  }
+});
+
+searchInput.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    searchButton.click();
   }
 });
 
