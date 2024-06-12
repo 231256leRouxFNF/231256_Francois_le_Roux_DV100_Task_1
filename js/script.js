@@ -2,6 +2,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
   loadTickets();
 });
 
+// Searchbar
+
+const searchInput = document.getElementById('search-input');
+
+searchInput.addEventListener('keypress', function(event) {
+  if (event.key === 'Enter') {
+    const planetName = searchInput.value.trim();
+    if (planetName) {
+      window.location.href = 'pages/flight.html?planet=' + planetName;
+    }
+  }
+});
+
 // This lets the user(s) know that there ticket has been added
 function addFlightTicket(flightName) {
   const tickets = JSON.parse(localStorage.getItem('tickets')) || [];
@@ -45,52 +58,6 @@ function loadTickets() {
   const tickets = JSON.parse(localStorage.getItem('tickets')) || [];
   tickets.forEach(ticket => addTicketToList(ticket));
 }
-
-
-// Code from W6 on how to add more than 1 ticket to the cart
-// // how arrays are defined
-// let numbers = [40, 100, 1];
-// let points = new Array(40, 100 ,1);
-
-// console.log(numbers);
-// console.log(points);
-
-// let good = [40];
-// let bad = new Array(40);
-
-// console.log(good);
-// console.log(bad);
-
-// let dogs = ["golden retriever", "labrador", "staffie", "bulldog", "rotweiller", "toi-pomme"];
-
-// console.log(dogs); //whole array
-// console.log(dogs.length); //just length
-// console.log(dogs[0]); //specific item
-// console.log(dogs[dogs.length-1]); //last item
-// console.log(Array.isArray(dogs)); //is array, or not?
-// console.log(dogs.toString()); 
-// console.log(dogs.join(", "));
-// console.log(dogs.join(" * "));
-
-// dogs.pop();
-// console.log(dogs);
-
-// let dog = dogs.pop();
-// console.log(dog);
-
-
-// dogs.push("toi-pomme");
-// console.log(dogs);
-
-// let newDogs = dogs.slice(1, 4,);
-
-// console.log(newDogs);
-// console.log(dogs);
-
-// dogs.splice(1, 2, "jack russel", "doberman", "pitbull");
-
-// console.log(dogs);
-
 
 // JS for counter thingy
 
@@ -195,28 +162,16 @@ function total(){
 // Contact Form JavaScript 
 
 // Get the form element
-const form = document.querySelector('form');
+const form = document.getElementById('myForm');
 
 // Add an event listener to the form's submit event
-form.addEventListener('submit', (e) => {
-  // Prevents the default form submission behavior
-  e.preventDefault();
+form.addEventListener('submit', function(event) {
+  // Prevent the default form submission behavior
+  event.preventDefault();
 
-  // Fetches the form data
-  const name = document.querySelector('input[name="name"]').value;
-  const email = document.querySelector('input[name="email"]').value;
-  const subject = document.querySelector('input[name="subject"]').value;
-  const message = document.querySelector('textarea[name="message"]').value;
+  // Get the user's name from the form
+  const userName = document.getElementById('name').value;
 
-  // Stores the form data in sessionStorage
-  sessionStorage.setItem('name', name);
-  sessionStorage.setItem('email', email);
-  sessionStorage.setItem('subject', subject);
-  sessionStorage.setItem('message', message);
-
-  // Sends out the alert to the user
-  alert('Message sent successfully!');
-
-  // Resets the form 
-  form.reset();
+  // Display an alert with the user's name
+  alert(`Thank you for your message, ${userName}!`);
 });
