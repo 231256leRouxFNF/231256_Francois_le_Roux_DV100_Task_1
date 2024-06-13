@@ -4,22 +4,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 // Searchbar
 
-const searchInput = document.getElementById('search-input');
-const searchButton = document.getElementById('search-button');
+// const searchInput = document.getElementById('search-input');
+// const searchButton = document.getElementById('search-button');
 
-searchButton.addEventListener('click', () => {
-  const planetName = searchInput.value.trim();
-  if (planetName) {
-    // Navigate to the flights page with the planet name
-    window.location.href = `/flights/${planetName}`;
-  }
-});
+// searchButton.addEventListener('click', () => {
+//   const planetName = searchInput.value.trim();
+//   if (planetName) {
+//     // Navigate to the flights page with the planet name
+//     window.location.href = `/flights/${planetName}`;
+//   }
+// });
 
-searchInput.addEventListener('keypress', (e) => {
-  if (e.key === 'Enter') {
-    searchButton.click();
-  }
-});
+// searchInput.addEventListener('keypress', (e) => {
+//   if (e.key === 'Enter') {
+//     searchButton.click();
+//   }
+// });
 
 // This lets the user(s) know that there ticket has been added
 function addFlightTicket(flightName) {
