@@ -4,22 +4,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 // Searchbar
 
-// const searchInput = document.getElementById('search-input');
-// const searchButton = document.getElementById('search-button');
+const searchInput = document.getElementById('search-input');
 
-// searchButton.addEventListener('click', () => {
-//   const planetName = searchInput.value.trim();
-//   if (planetName) {
-//     // Navigate to the flights page with the planet name
-//     window.location.href = `/flights/${planetName}`;
-//   }
-// });
+searchInput.addEventListener('input', function() {
+  // Search Bar JavaScript code here
+});
 
-// searchInput.addEventListener('keypress', (e) => {
-//   if (e.key === 'Enter') {
-//     searchButton.click();
-//   }
-// });
 
 // This lets the user(s) know that there ticket has been added
 function addFlightTicket(flightName) {
@@ -144,23 +134,23 @@ function increaseMoon(){
   document.getElementById('ticketsMoon').value = parseInt(document.getElementById('ticketsMoon').value) + 1;
 }
 
-let totalMarsCost = 0;
-let totalNeptuneCost = 0;
-let totalJupiterCost = 0;
-let totalSaturnCost = 0;
-let totalUranusCost = 0;
-let totalMoonCost = 0;
-let finalCost = 0;
+let totalCostMars = 0;
+let totalCostNeptune = 0;
+let totalCostJupiter = 0;
+let totalCostSaturn = 0;
+let totalCostUranus = 0;
+let totalCostMoon = 0;
+let finalTotalCost = 0;
 
 function total(){
-  totalMarsCost = parseInt(document.getElementById('ticketsMars').value) * 25000;
-  totalNeptuneCost = parseInt(document.getElementById('ticketsNeptune').value) * 45000;
-  totalJupiterCost = parseInt(document.getElementById('ticketsJupiter').value) * 65000;
-  totalSaturnCost = parseInt(document.getElementById('ticketsSaturn').value) * 40000;
-  totalUranusCost = parseInt(document.getElementById('ticketsUranus').value) * 50000;
-  totalMoonCost = parseInt(document.getElementById('ticketsMoon').value) * 15000;
-  finalCost = totalMarsCost + totalNeptuneCost + totalJupiterCost + totalSaturnCost + totalUranusCost + totalMoonCost;
-  document.getElementById('total').innerHTML = "R " + finalCost;
+  totalCostMars = parseInt(document.getElementById('ticketsMars').value) * 25000;
+  totalCostNeptune = parseInt(document.getElementById('ticketsNeptune').value) * 45000;
+  totalCostJupiter = parseInt(document.getElementById('ticketsJupiter').value) * 65000;
+  totalCostSaturn = parseInt(document.getElementById('ticketsSaturn').value) * 40000;
+  totalCostUranus = parseInt(document.getElementById('ticketsUranus').value) * 50000;
+  totalCostMoon = parseInt(document.getElementById('ticketsMoon').value) * 15000;
+  finalTotalCost = totalCostMars + totalCostNeptune + totalCostJupiter + totalCostSaturn + totalCostUranus+ totalCostMoon;
+  document.getElementById('total').innerHTML = "R " + finalTotalCost;
 
 }
 
@@ -171,7 +161,7 @@ function total(){
 const form = document.getElementById('myForm');
 
 // Add an event listener to the form's submit event
-form.addEventListener('submit', function(event) {
+form.addEventListener('submitForm', function(event) {
   // Prevent the default form submission behavior
   event.preventDefault();
 
